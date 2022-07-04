@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BuzzQuizz</title>
+</head>
+<body>
+
+   <div class="top">BuzzQuizz</div>
+   <div class="sub-body">
+
+<!--****************************************************  TELA 01 LISTA DE QUIZZES  ****************************************************-->
+
+<div class="display-one ">
+
+    <div class="first-quizz">
+    <div class="add-quizz">
+        <div class="alert"><p>Você não criou nenhum quizz ainda :(</p></div>
+        <button onclick="botaoCriarQuizz()">Criar Quizz</button>
+    </div>
+    </div>
+
+
+    <div class="your-quizzes-box esconder">
+        <div class="your-quizzes">Seus Quizzes <ion-icon onclick="botaoCriarQuizz()" name="add-circle"></ion-icon></div>
+    
+        <div class="your-quizz">
+            <div class="quizz">
+                <img src="https://media.timeout.com/images/103415398/750/422/image.jpg" >
+                <p>Qual dos personagens de Friends mais te representa?</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="display-two">
+    <div class="title">Todos os Quizzes</div>
+    <div class="all-quizzes"></div>
+</div>
+<!--*************************************************************  TELA 02  **************************************************************-->
+
+         <div class="d-8 esconder">
+         <div class="desktop-8">
+         <h6 class="h6-desktop-8a11">comece pelo começo</h6>
+         <div class="box-8">
+            <input type="text" placeholder="Título do seu quizz" class=" titulo"/>
+            <input type="text" placeholder="URL da imagem do seu quizz" class=" URL-img"/>
+            <input type="text" placeholder="Quantidade de perguntas do quizz" class=" qtd-perguntas"/>
+            <input type="text" placeholder="Quantidade de níveis do quizz" class=" qtd-niveis"/>
+         </div>
+         <button class="botao-desktop" onclick="SeguirCriarPerguntas()"><h5 class="h5-desktop-8a11" >Prosseguir pra criar perguntas</h5></button>
+         </div>
+        </div>
+         
+         <div class="d-9 esconder">
+         <div class="desktop-9">
+         <h6 class="h6-desktop-8a11">Crie suas perguntas</h6>
+         </div>
+         </div>
+       
+        
+         <div class="d-10 esconder">
+         <div class="desktop-10">
+         <h6 class="h6-desktop-8a11">Agora, decida os níveis</h6>
+         </div>
+        </div>
+         <div class="d-11 esconder">
+         <div class="desktop-11">
+         <h6 class="h6-desktop-8a11">Seu quizz está pronto!</h6>
+        <!--- <div class="imagem-do-quizz"><h3 class="h3-escrita-da-img">alguma coisa aqui</h3></div>
+         <button class="botao-acessar-quizz"><h5 class="h5-desktop-8a11" >Acessar Quizz</h5></button>
+         <div class="voltar-pra-home"><h4 class="voltar-pra-home">Voltar pra home</h4></div>-->
+        </div>
+        </div>
+
+
+<!--******************************************************  TELA DO QUIZZ ******************************************************-->
+
+<div class="quizz-top esconder"></div>
+<div class="push-question esconder"></div>
+
+
+<div class="result-all esconder">
+
+</div>
+
+
+</div><!--sub-body-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="./script1.js"></script> 
+    <script src="./script2.js"></script>
+</body>
+</html>
